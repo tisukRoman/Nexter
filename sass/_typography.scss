@@ -1,0 +1,66 @@
+%heading {
+  font-family: $font-display;
+  font-weight: 400;
+}
+
+.heading-1 {
+  @extend %heading;
+
+  font-style: italic;
+  line-height: 5rem;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 4.5rem;
+  font-style: italic;
+  line-height: 4.5rem;
+}
+
+.heading-3 {
+  @extend %heading;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: $color-primary;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 2rem;
+
+  &--light {
+    color: $color-grey-light-1;
+  }
+
+  &--dark {
+    color: $color-grey-dark-1;
+  }
+}
+
+.heading-5 {
+  @extend %heading;
+  font-size: 1.8rem;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.btn {
+  padding: 1.5rem 4rem;
+  background-color: $color-primary;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
